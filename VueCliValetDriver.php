@@ -21,6 +21,6 @@ class VueCliValetDriver extends WebpackDevServerBaseDriver
 
     protected function filterDevContent($content)
     {
-        return str_replace('/app.js', "//{$this->devServerHost}:{$this->port}/app.js", $content);
+        return str_replace('js/app.js', "//{$this->devServerHost}:{$this->port}/js/app.js", $content);
     }
 }
